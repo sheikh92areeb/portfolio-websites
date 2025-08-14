@@ -51,3 +51,29 @@ body {
 .menu-btn:active {
   transform: scale(0.95); /* active:scale-95 */
 }
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 100%;
+  margin-top: 0.5rem; /* mt-2 */
+  right: 0;
+  min-width: 10rem; /* min-w-40 */
+  padding: 0.5rem; /* p-2 */
+  background-color: rgba(244,244,245,0.1); /* bg-zinc-50/10 */
+  border-radius: 1rem; /* rounded-2xl */
+  box-shadow: 0 0 0 1px rgba(244,244,245,0.05) inset; /* ring-inset ring-1 ring-zinc-50/5 */
+  transform: scale(0.9); /* scale-90 */
+  isolation: isolate; /* isolate */
+  filter: blur(4px); /* blur-sm */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, transform 0.2s, filter 0.2s; /* transition-[opacity, transform, filter] */
+}
+
+.navbar.active {
+  opacity: 1; /* opacity-100 */
+  transform: scale(1); /* scale-100 */
+  filter: blur(0); /* blur-0 */
+  visibility: visible;
+}
