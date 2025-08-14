@@ -1,0 +1,12 @@
+Stunning React.js Portfolio Website
+
+Stack
+-  React
+-  Tailwind
+-  GSAP
+
+Uniqueness
+-  Smooth Scroll Animations (lenis)
+-  Animate Element (GSAP scrollTriger)
+-  Sending Mail
+
