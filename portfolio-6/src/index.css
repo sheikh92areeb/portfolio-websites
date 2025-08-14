@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap');
+@import "tailwindcss";
+
+
+/* _______________ BASE _______________ */
+
+*{
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 5px;
+}
+
+html::-webkit-scrollbar-track {
+  width: 5px;
+  background-color: #27272a;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #71717b;
+  border-radius: 30px;
+}
+
+body {
+  background-color: #18181b;
+  color: #fafafa;
+}
+
+/* _______________ COMPONENTS _______________ */
+
+/* menu btn */
+.menu-btn {
+  width: 2.5rem; /* w-10 */
+  height: 2.5rem; /* h-10 */
+  display: grid; /* grid */
+  place-items: center; /* place-items-center */
+  background-color: rgba(244,244,245,0.1); /* bg-zinc-50/10 */
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: 0 0 0 1px rgba(244,244,245,0.02) inset; /* ring-inset ring-1 ring-zinc-50/[0.02] */
+  backdrop-filter: blur(32px); /* backdrop-blur-2xl */
+  transition: transform 0.2s, background-color 0.2s; /* transition-[transform, background-color] */
+}
+.menu-btn:hover {
+  background-color: rgba(244,244,245,0.15); /* hover:bg-zinc-50/15 */
+}
+.menu-btn:active {
+  transform: scale(0.95); /* active:scale-95 */
+}
