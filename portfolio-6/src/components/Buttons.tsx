@@ -1,15 +1,7 @@
 import type { FC } from "react"
-
-interface ButtonProps {
-    label: string,
-    href?: string,
-    target?: string,
-    icon?: string,
-    classes?: string,
-}
+import type { ButtonProps } from "../data/dataInterfaces";
 
 // Button Primary
-
 const ButtonPrimary: FC<ButtonProps> = ({href, target = '_self', label, icon, classes}) => {
   return (
     href ? (
@@ -23,11 +15,10 @@ const ButtonPrimary: FC<ButtonProps> = ({href, target = '_self', label, icon, cl
         {icon ? <span className="material-symbols-rounded" aria-hidden="true">{icon}</span>: undefined}
       </button>
     )
-  );
+  )
 }
 
 // Button Outline
-
 const ButtonOutline: FC<ButtonProps> = ({href, target = '_self', label, icon, classes}) => {
   return (
     href ? (
@@ -41,11 +32,10 @@ const ButtonOutline: FC<ButtonProps> = ({href, target = '_self', label, icon, cl
         {icon ? <span className="material-symbols-rounded" aria-hidden="true">{icon}</span>: undefined}
       </button>
     )
-  );
+  )
 }
 
-
 export { 
-    ButtonPrimary,
-    ButtonOutline 
+  ButtonPrimary,
+  ButtonOutline 
 }
