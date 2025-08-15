@@ -120,6 +120,11 @@ body {
   }
 }
 
+.reveal-up {
+  transform: translateY(5rem); /* Tailwind's translate-y-20 */
+  opacity: 0;
+}
+
 /* _______________ COMPONENTS _______________ */
 
 /* menu btn */
@@ -265,4 +270,41 @@ body {
 }
 .btn-outline:active {
   background-color: #27272a; /* active:bg-zinc-800 */
+}
+
+/* Text Field */
+.label {
+  display: block;
+  color: #e4e4e7; /* text-zinc-200 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 400; /* font-normal */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.text-field {
+  display: block;
+  outline: none;
+  width: 100%;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+  background-color: #27272a;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 0 1px transparent inset;
+  transition: box-shadow 0.2s;
+  border: none;
+}
+
+.text-field:hover {
+  box-shadow: 0 0 0 1px rgba(244,244,245,0.05) inset;
+}
+
+.text-field:focus {
+  box-shadow: 0 0 0 2px #38bdf8 inset;
+}
+
+.text-field::placeholder {
+  color: #a1a1aa; /* text-zinc-400 */
 }
