@@ -66,6 +66,11 @@ body {
   }
 }
 
+.title-1 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
 /* _______________ UTILITIES _______________ */
 .material-symbols-rounded {
   width: 1em;
