@@ -1,3 +1,9 @@
+import { assets } from "../assets/assets";
+
+const yearsFrom = (year: number): number => {
+  const currentYear = new Date().getFullYear()
+  return currentYear - year
+}
 
 const aboutItems = [
   {
@@ -5,10 +11,16 @@ const aboutItems = [
     number: 45
   },
   {
+    label: 'Satisfied Clients',
+    number: 30
+  },
+  {
     label: 'Years of experience',
-    number: 10
-  }
+    number: yearsFrom(2022)
+  },
 ];
+
+const aboutBio = "Hi, I’m Areeb — a professional web developer specializing in creating visually stunning, user-friendly, and high-performance websites. With expertise in modern web technologies, I bring your ideas to life through creative design and efficient coding. My goal is to deliver websites that not only look exceptional but also drive results, boost user engagement, and rank higher in search engines."
 
 const About = () => {
   return (
@@ -16,7 +28,7 @@ const About = () => {
         <div className="container">
             <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
                 <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
-                    Welcome! I&apos;m Henry, a professional web developer with a knack for crafting visually stunning and highly functional websites. Combining creativity and technical expertise. I transform your vision into digital masterpiece that excels in both appearance and performance.
+                    {aboutBio}
                 </p>
                 <div className="flex flex-wrap items-center gap-4 md:gap-7">
                     {aboutItems.map(({label, number}, key) => (
@@ -28,7 +40,7 @@ const About = () => {
                             <p className="text-sm text-zinc-400">{label}</p>
                         </div>
                     ))}
-                    <img src="/src/assets/logo.svg" alt="Logo" width={30} height={30} className="ml-auto md:w-[40px]"/>
+                    <img src={assets.favicon} alt="Logo" width={30} height={30} className="ml-auto md:w-[40px]"/>
                 </div>
             </div>
         </div>

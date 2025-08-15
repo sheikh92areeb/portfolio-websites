@@ -19,9 +19,9 @@ const App = () => {
     const elements = gsap.utils.toArray('.reveal-up')
     
     elements.forEach((element) => {
-      gsap.to(element, {
+      gsap.to(element as HTMLElement, {
         scrollTrigger: {
-          trigger: element,
+          trigger: element as HTMLElement,
           start: '-200 bottom',
           end: 'bottom 80%',
           scrub: true,          
