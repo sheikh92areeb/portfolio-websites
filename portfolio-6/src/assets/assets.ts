@@ -53,3 +53,14 @@ export const socialIcon = {
 }
 
 // ----- PROJECTS IMAGE -----
+import coffeeShop from './projects/coffee-shop.png'
+import loftcity from './projects/loftcity.png'
+import xClone from './projects/x-clone.png'
+import myPortfolio from './projects/myPortfolio.png'
+import netflixClone from './projects/netflixClone.png'
+import aTask from './projects/aTask.png'
+
+export const projectImages = {
+    coffeeShop, loftcity, xClone,
+    myPortfolio, netflixClone, aTask
+}
